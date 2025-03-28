@@ -1,10 +1,10 @@
 # Views, Common Table Expressions (CTEs), and Joins
 
 ## Inspect the yum Table (62)
-```PRAGMA table_info(yum);````
+`PRAGMA table_info(yum);`
 
 verify
-```SELECT * FROM yum LIMIT 5;```
+`SELECT * FROM yum LIMIT 5;`
 
 ## Aggregate `yum` Data by Month and Year (63)
 ```
