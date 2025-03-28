@@ -1,8 +1,10 @@
-## Inspect the yum Table
-`PRAGMA table_info(yum);`
-`SELECT * FROM yum LIMIT 5;`
+## Inspect the yum Table (62)
+```PRAGMA table_info(yum);````
 
-## Aggregate `yum` Data by Month and Year
+verify
+```SELECT * FROM yum LIMIT 5;```
+
+## Aggregate `yum` Data by Month and Year (63)
 ```
 SELECT 
     strftime('%Y', date) AS year,
@@ -17,7 +19,7 @@ GROUP BY year, month
 ORDER BY year, month;
 ```
 
-## Save as a View
+## Save as a View (64)
 ```
 CREATE VIEW yum_by_month AS
 SELECT 
@@ -32,6 +34,6 @@ FROM yum
 GROUP BY year, month;
 ```
 
-### Check if view is created
+### Check if view is created 
 `SELECT * FROM yum_by_month LIMIT 5;`
 
