@@ -236,7 +236,7 @@ ON trans_by_month.year = yum_by_month.year
 AND trans_by_month.month = yum_by_month.month
 ORDER BY trans_by_month.year, trans_by_month.month;
 ```
-
+.
 
 ### Run Queries
 Run each query in your database to verify results.
